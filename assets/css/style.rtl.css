@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap");
+
+html,
+body {
+  font-family: "Cairo", sans-serif;
+}
+
+body {
+  direction: rtl;
+  text-align: right;
+}
+
+/* ================================================================================================================= */
+/* Navbar */
+
+.ms-me-auto {
+  margin-right: auto;
+  margin-left: 0;
+}
+
+.btn-page-link {
+  transform: rotate(180deg);
+}
+
+@media screen and (max-width: 992px) {
+  .box-navbar-nav {
+    background-color: #ffffff;
+    position: absolute;
+    top: 0;
+    right: -100%;
+    left: auto;
+    height: 100vh;
+    width: 300px;
+    padding: 1.2rem 2rem;
+    z-index: 30;
+    transition: all 1s;
+  }
+
+  .box-navbar-nav.active {
+    right: 0;
+    left: auto;
+  }
+}
+
+.box-arrow-next-prev .swiper-button-prev {
+  right: -40px;
+  left: auto;
+}
+
+.box-arrow-next-prev .swiper-button-next {
+  left: -40px;
+  right: auto;
+}
+
+/* .box-arrow-next-prev {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  position: absolute;
+  left: 16px;
+  right: auto;
+} */
+
+@media screen and (max-width: 767px) {
+  .box-arrow-next-prev .swiper-button-prev {
+    right: 0;
+    left: auto;
+  }
+
+  .box-arrow-next-prev .swiper-button-next {
+    left: 0;
+    right: auto;
+  }
+}
